@@ -1,0 +1,4789 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+/* ヘッダー */
+header {
+    font-weight: 700;
+    width: 100%;
+}
+
+header .container {
+    max-width: 1720px;
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
+header .container img {
+    max-width: 28rem;
+    width: 100%;
+    padding: 10px;   
+}
+
+header .row {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+header ul li {
+    font-size: 18px;
+    margin: 8px;
+    letter-spacing: 1px;
+}
+header ul li a:hover {
+    background-color: rgb(212, 219, 219);
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/* メニューのスタイル */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* 初期状態画面の外 */
+  width: 300px;
+  height: 100%;
+  color: #333;
+  transition: right 0.3s ease; /* スライドインのアニメーション */
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 10;
+     background:
+  linear-gradient(
+    150deg,
+    #a7ebeb,
+    #b4e7bf
+  );
+}
+
+/* メニューが開いているとき */
+.menu.open {
+  right: 0;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* ボタンのスタイル */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* バツ印に変化するスタイル */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* メニューリストのスタイル */
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 80px;
+}
+
+.menu li {
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+}
+
+.menu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* セクション1 */
+.section1 .container {
+  max-width: 1920px;
+  margin: 0 auto;
+  
+}
+
+.section1 .container img {
+max-width: 1920px;
+padding: 5px;
+   background:
+  linear-gradient(
+    100deg,
+    #40cfcf,
+    #d7e0d9
+  );
+
+}
+
+
+/* セクション2 */ 
+.section2 {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+.section2 .taitorulogo {
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    margin: 0 auto;
+    max-width: 1700px;
+    width: 100%;
+
+}
+
+.section2 .img0 {
+    width: 100%;
+    max-width: 10rem;
+
+}
+
+
+
+.section2 h1 {
+    padding-bottom: 5px;
+    margin-top: 32px;
+    max-width: 100%;
+    font-size: 2.5rem;
+}
+
+.section2 h2 {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700px;
+    letter-spacing: 7px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+
+.section2 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+}
+/* セクション2-2 */
+.section2-2 {
+    max-width: 1880px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d8fbfd;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.section2-2 .row p {
+    font-size: 25px;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 3; 
+}
+
+.section2-2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1660px;
+    margin: 0 auto;
+}
+
+.section2-2 .row img {
+    max-width: 45rem;
+    width: 100%;
+    background-size:cover ;
+    background-position: center;
+    border-radius: 16px;
+    margin: 20px;
+    border: 5px solid #a5b5b8 ;
+    
+
+}
+/* セクション2-3 */
+.section2-3 {
+    max-width: 1880px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.section2-3 .row   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2-3 .row img {
+    width: 37rem;
+    max-width: 100%;
+    border-radius: 25px;
+    padding: 0px;
+    align-items: center;
+    margin-top: 30px;
+    
+    border: 5px solid #a5b5b8;
+}
+
+/* セクション3 */
+
+.section3 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+}
+.section3 {
+    width: 100%;
+    max-width: 1075px;
+    margin: 0 auto;
+}
+.section3 .taitorulogo {
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section3 .img1 {
+    width: 100%;
+    max-width: 10rem;
+}
+
+.section3 h1 {
+    padding-bottom: 5px;
+    margin-top: 32px;
+    max-width: 100%;
+    font-size: 2.5rem;
+}
+
+.section3 h2 {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700px;
+    letter-spacing: 7px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+/* セクション3-2 */
+.section3-2 {
+    margin: 0 auto;
+    max-width: 1880px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #c3f1f1;
+
+}
+
+.section3-2 .row p {
+    font-size: 25px;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 3; 
+}
+
+.section3-2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1660px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
+.section3-2 .row img {
+    max-width: 45rem;
+    width: 100%;
+    background-size:cover ;
+    background-position: center;
+    border-radius: 16px;
+    margin: 20px;
+     border: 5px solid #a5b5b8 ;
+
+}
+
+/* セクション4  */
+
+.section4 .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+}
+
+.section4 h1 {
+ margin: 0 auto;
+ margin-bottom: 20px;
+ font-size: 40px;
+ letter-spacing: 5px;
+ border-bottom: 3px solid #57cbd0;
+ color: #333333;
+ width: 180px;
+
+
+}
+
+.section4 .list-9 {
+max-width: 40rem;
+width: 100%;
+margin: 0 auto;
+}
+.section4  .taitoru {
+    font-size: 25px;
+    
+}
+
+.list-9 {
+    list-style-type: disc;
+    list-style-position: inside;
+    border: 2px solid #57cbd0;
+}
+
+.list-9 li {
+    padding: .5em;
+    margin: 10px;
+    text-align: center;
+}
+
+.list-9 li:not(:last-child) {
+    border-bottom: 1px dashed #57cbd0;
+}
+
+.list-9 li::marker {
+    color: #797878;
+    font-size: 1.1em;
+} 
+
+/* セクション5 */
+.section5 {
+    background-color: #ffffff;
+}
+
+.section5 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    margin-right:140px;
+    margin-bottom: 15px;
+}
+.section5 h1 {
+    font-size: 40px;
+    padding-bottom: 5px;
+    margin-top: 75px;
+    letter-spacing: 1px;
+    
+}
+.section5 h2 {
+  font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 8px;
+    padding-left: 2px;
+    padding-top: 5px; 
+}
+.section5 .img1 {
+    width: 200px;
+    height: 200px;
+    margin-left: 75px;
+    margin-top: 20px;
+   
+    
+}
+.section5 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+    width:250px;
+}
+
+.section5 .risuto {
+    margin: 0 auto;
+}
+
+.section5 .midasi {
+    background-color: #c6c9c5;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    table-layout: fixed;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding: 48px 40px;
+    vertical-align:middle
+
+}
+.section5 .midasitop {
+    background-color: #c6c9c5;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    table-layout: fixed;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding: 48px 40px;
+    border-radius: 16px 0px 0px 0px;
+    vertical-align:middle
+
+
+}
+
+.section5 .midasibottom {
+    background-color: #c6c9c5;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    table-layout: fixed;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding: 48px 40px;
+    border-radius: 0px 0px 0px 16px;
+    vertical-align:middle
+
+}
+
+.section5 p {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 1.5rem;
+    padding: 48px 40px;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    width: 920px;
+    vertical-align:middle
+}
+.section5 .texttop {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 1.5rem;
+    padding: 48px 40px;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    width: 920px;
+    border-radius: 0px 16px 0px 0px;
+    vertical-align:middle
+}
+.section5 .textbottom {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 1.5rem;
+    padding: 48px 40px;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    width: 920px;
+    border-radius: 0px 0px 16px 0px;
+    vertical-align:middle
+}
+
+/* セクション6 */
+.section6 {
+   background-color: #ffffff;
+
+}
+
+.section6 .img0 {
+    width: 200px;
+    height: 200px;
+    margin-left: 75px;
+    margin-top: 20px;
+
+}
+.section6 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    margin-right: 180px;
+    margin-bottom: 15px;
+    
+   
+}
+.section6 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+    width:250px;
+}
+.section6 h1 {
+    font-size: 40px;
+    padding-bottom: 5px;
+    margin-top: 75px;
+    letter-spacing: 1px;
+    
+}
+.section6 h2 {
+    font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 9px;
+    padding-left: 2px;
+    padding-top: 5px; 
+}
+
+/* セクション7 */
+.sutahhu {
+   border-radius: 50px 50px 50px 50px;
+   height: auto;
+   display: flex; 
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   background:
+  linear-gradient(
+    150deg,
+    #40cfcf,
+    #b5fdcd
+  );
+}
+.sutahhu img {
+    width: 25rem;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 100px 30px 100px 30px;
+    background-color: #a5b5b8;
+    
+}
+/* バック */
+.thumbnail {
+  width: 300px;
+  cursor: pointer;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+#modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* セクション8 */
+.section8 {
+    margin-bottom: 30px;
+    
+}
+
+.section8 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.section8 .taitorulogo .text {
+    margin-right: 80px;
+}
+
+.section8 h1 {
+    font-size: 40px;
+    padding-bottom: 5px;
+    margin-top: 75px;
+    letter-spacing: 1px;
+    
+}
+.section8 h2 {
+  font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 6px;
+    padding-left: 2px;
+    padding-top: 5px; 
+}
+.section8 .img0 {
+    width: 200px;
+    height: 200px;
+
+}
+.section8 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 170px;
+}
+
+
+.section8 .text2 {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.section8 .midasi {
+    border-bottom: 3px solid #57cbd0;
+    color: #333333;
+    width:300px;
+    font-size: 1.5rem;
+    table-layout: fixed;
+    padding-bottom: 10px;
+    vertical-align:middle
+}
+
+.section8 p {
+    border-bottom: 3px solid #c6c9c5;
+    table-layout: fixed;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.1rem;
+    padding-top: 30px;
+    
+    vertical-align:middle;
+}
+
+/* セクション9 */
+.section9 {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section9 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right:170px;
+    margin-bottom: 15px;
+}
+.section9 h1 {
+    font-size: 40px;
+    padding-bottom: 5px;
+    margin-top: 75px;
+    letter-spacing: 1px;
+   
+    
+}
+.section9 h2 {
+  font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 2px;
+    padding-top: 5px; 
+}
+
+.section9 p {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    letter-spacing: 1px;
+    line-height: 2.8; 
+
+}
+
+.section9 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+    width:260px;
+}
+
+.section9 .img0 {
+    width: 200px;
+    height: 200px;
+    margin-left: 75px;
+    margin-top: 20px; 
+}
+
+.section9 .text2 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+    width:180px;
+}
+
+/* セクション9-2 */
+.section9-2 {
+    width: 100%;
+    max-width: 1880px;
+    margin: 0 auto;
+}
+.section9-2 h1 {
+    font-size: 40px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.section9-2 h2 {
+  font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 2px;
+    padding-top: 5px; 
+}
+.section9-2 .text2 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+    width:170px;
+}
+
+.section9-2 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    margin-left: 150px;
+}
+
+.section9-2 .row1 img {
+ width: 100px;
+ height: 100px;
+ padding: 10px;
+}
+
+.section9-2 .row1 .imgs {
+    margin-right: 20px;
+}
+
+/* セクション9-3 */
+.section9-3 .row2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto; 
+    max-width: 1880px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d8fbfd;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px 30px 30px 30px;
+}
+.section9-3 .row2 p {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 150px;
+    letter-spacing: 1px;    
+    line-height: 2.8; 
+}
+.section9-3 img {
+   max-width: 45rem;
+   width: 100%;
+   background-size:cover ;
+   background-position: center;
+   border-radius: 16px;
+   margin: 20px;
+   margin-right: 120px;
+   border: 5px solid #a5b5b8 ;
+}
+
+/* セクション10 */
+.section10 {
+    max-width: 1920px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin: 0 auto;
+}
+
+.section10 h1 {
+    font-size: 30px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+.section10 .text2 {
+    max-width: 200px;
+    margin-left: 100px;
+    margin-bottom: 95px;
+}
+.section10 .p1 {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;    
+    line-height: 2.8; 
+    padding: 20px;
+}
+.section10 .shoot {
+  font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 8px;
+    padding-left: 5px;
+    padding-top: 5px; 
+}
+
+.section10 .text3 {
+    max-width: 400px;
+    margin-right: 200px;
+}
+
+.section10 .text3 h1 {
+    font-size: 30px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    
+}
+.section10 .long {
+    font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 14px;
+    padding-left: 5px;
+    padding-top: 5px; 
+    text-align: center;
+}
+.section10 .p2 {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;    
+    line-height: 2.8; 
+    margin-left: 25px;
+
+}
+
+.section10 .text2 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+    width:170px;
+    
+}
+
+.section10 .text3 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+    width:220px;
+}
+.section10 .row1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1880px;
+    width: 100%;
+    background-color: #c3f1f1;
+    border-radius: 30px 30px 30px 30px;
+
+
+}
+
+.section10 .row1 img {
+   max-width: 45rem;
+   width: 100%;
+   background-size:cover ;
+   background-position: center;
+   border-radius: 16px;
+   margin: 20px;
+   margin-left: 145px;
+   border: 5px solid #a5b5b8 ;
+}
+
+/* セクション11 */
+
+.section11 .box1 {
+    border: 2px solid #797878;
+    color: #333333;
+    margin: 25px;
+    background-color: #fcffff;
+    
+}
+.section11 h1 {
+    font-size: 40px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    
+}
+.section11 .text1 h2 {
+    font-size: 2rem;
+    font-weight: 700px;
+    letter-spacing: 3px;
+    border-bottom: 3px solid #797878;
+    width:170px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left:200px;
+    text-align: center;
+    
+}
+
+.section11 p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    line-height: 2; 
+}
+
+.section11 .box {
+   height: auto;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   max-width: 1880px;
+   border-radius: 30px 30px 0px 30px;
+   width: 100%;
+   margin: 0 auto;
+   background-color: #bbeff0;
+   
+}
+
+.section11 .text1 {
+    padding-left: 75px;
+    padding-right: 75px;
+   
+}
+
+
+.section11 img {
+   width: 25rem;
+    border: 5px solid #a5b5b8 ;
+}
+
+.section11 .text2 a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 50px 10px 40px;
+    display: inline-block;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 5px rgb(115, 134, 134);
+    background:
+  linear-gradient(
+    150deg,
+    #cdebeb,
+    #5edce6
+    )
+}
+
+.section11 .text3 a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 70px 10px 40px;
+    display: inline-block;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    box-shadow: 0px 0px 5px rgb(115, 134, 134);
+    background:
+  linear-gradient(
+    150deg,
+    #cdebeb,
+    #5edce6
+    )
+}
+
+.section11 .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+}
+/* セクション12 */
+.section12 .img0 {
+    width: 200px;
+    height: 200px;
+    margin-left: 75px;
+    margin-top: 0px;
+
+}
+.section12 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    margin-right: 90px;
+    margin-bottom: 15px;
+    
+   
+}
+.section12 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+    width:300px;
+}
+.section12 h1 {
+    font-size: 40px;
+    padding-bottom: 5px;
+    margin-top: 75px;
+    letter-spacing: 1px;
+    
+}
+.section12 h2 {
+    font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    padding-left: 2px;
+    padding-top: 5px; 
+}
+
+/* セクション13 */
+.section13 {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    
+    
+
+}
+
+.section13 .text2 p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 2.2rem;
+    text-align: start;
+    max-width: 700px;
+    width: 100%;;
+
+
+}
+.section13 img {
+   width: 18rem;
+   margin: 2px;
+   margin-top: 30px;
+   
+}
+.section13 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section13 .text2 {
+    border: 0.2rem solid #868686;
+    color: #333333;
+    margin-bottom: 30px;
+    max-width: 600px;
+    width: 100%;
+    padding: 5px;
+    margin-left: 670px;
+    
+}
+
+/* セクション14 */
+.section14 .img0 {
+    width: 200px;
+    height: 200px;
+    margin-left: 75px;
+    margin-top: 20px;
+
+}
+.section14 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    margin-right: 150px;
+    margin-bottom: 15px;
+}
+.section14 .heading-31 {
+    border-bottom: 3px solid #000000;
+    color: #333333;
+    width:250px;
+}
+.section14 h1 {
+    font-size: 40px;
+    padding-bottom: 5px;
+    margin-top: 75px;
+    letter-spacing: 1px;
+    
+}
+.section14 h2 {
+    font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 7px;
+    padding-left: 2px;
+    padding-top: 5px; 
+}
+/* セクション15 */
+.section15 {
+   width: 100%;
+    max-width: 1920px; 
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.section15 .container {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #ddf0f1;
+    border-radius: 0px 0px 0px 0px;
+    margin: 0px auto;
+    
+}
+    
+
+/* フッター */ 
+footer {
+    background-color: #c7c9c7;
+    margin-top: 50px;
+}
+
+footer .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer img {
+height: 50px;
+width: 50px;
+
+}
+
+footer p {
+    font-size: 1rem;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-width: 480px) {
+    /* フッター */
+footer {
+    background-color: #c7c9c7;
+    margin-top: 15px;
+}
+
+footer .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer img {
+height: 40px;
+width: 40px;
+
+}
+
+footer p {
+    font-size: 0.7rem;
+    margin-left: 10px;
+}
+    /* ヘッダー */
+header {
+    font-weight: 700;
+    width: 100%;
+}
+
+header .container {
+    max-width: 412px;
+    width: 100%;    
+    margin: 0 auto;
+   
+}
+
+header .container img {
+    max-width: 25rem;
+    width: 100%;
+    transition-duration: 0.2s;
+}
+
+header .row {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 30px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+header ul li {
+    font-size: 0.6rem;
+    margin: 2px;
+    letter-spacing: 1px;
+}
+
+header ul li a:hover {
+    background-color: rgb(212, 219, 219);
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+/* セクション1 */
+.section1 .container img {
+   max-width: 25.8rem;
+   width: 100%;
+   padding: 2px;
+   background:
+  linear-gradient(
+    100deg,
+    #40cfcf,
+    #d7e0d9
+  );
+
+}
+
+.section1 .container {
+  max-width: 414px;
+  margin: 0 auto;
+}
+
+    /* セクション2 */
+    .section2 {
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+}
+
+
+.section2 .taitorulogo {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-width: 1920px;
+    width: 100%;
+
+}
+
+.section2 .img0 {
+    width: 100%;
+    max-width: 7.5rem;
+}
+
+.section2 .text  {
+    margin-right: 10px;
+}       
+
+
+
+.section2 h1 {
+    padding-bottom: 5px;
+    margin-top: 32px;
+    max-width: 100%;
+    font-size: 1.3rem;
+}
+
+.section2 h2 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+
+.section2 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+}
+
+/* セクション2-2 */
+.section2-2 {
+    max-width: 414px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d8fbfd;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.section2-2 .row p {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 2.5; 
+}
+.section2-2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1660px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+
+
+.section2-2 .row img {
+    max-width: 23.5rem;
+    width: 100%;
+    background-size:cover ;
+    background-position: center;
+    border-radius: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 0px 0px 0px;
+    border: 2px solid #a5b5b8 ;
+    margin: 0 auto;
+
+}
+/* セクション2-3 */
+.section2-3 {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.section2-3 .row   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    background-color:#ffffff;
+}
+
+.section2-3 .row img {
+    width: 100%;
+    max-width: 7rem;
+    border-radius: 10px;
+    padding: 0px;
+    align-items: center;
+    border: 2px solid #a5b5b8 ;
+}
+/* セクション3 */
+
+.section3 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+}
+.section3 {
+    width: 100%;
+    max-width: 1075px;
+    margin: 0 auto;
+}
+.section3 .taitorulogo {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section3 .img1 {
+    width: 100%;
+    max-width: 7.5rem;
+}
+
+.section3 h1 {
+    padding-bottom: 5px;
+    margin-top: 32px;
+    max-width: 100%;
+    font-size: 1.3rem;
+
+}
+
+.section3 h2 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+/* セクション3-2 */
+.section3-2 {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.section3-2 .row p {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 2.5; 
+    margin: 0 auto;
+}
+
+.section3-2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1660px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.section3-2 .row img {
+    max-width: 23.5rem;
+    width: 100%;
+    background-size:cover ;
+    background-position: center;
+    border-radius: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 0px 0px 0px;
+    border: 2px solid #a5b5b8 ;
+    margin: 0 auto;
+
+}
+
+/* セクション4  */
+
+.section4 .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+}
+
+.section4 h1 {
+ margin: 0 auto;
+ margin-bottom: 20px;
+ font-size: 1.3rem;
+ letter-spacing: 5px;
+ border-bottom: 2px solid #57cbd0;
+ color: #333333;
+ width: 104px;
+ text-align: center;
+}
+
+.section4 .list-9 {
+max-width: 25rem;
+width: 100%;
+height: auto;
+margin: 0 auto;
+}
+
+.section4  .taitoru {
+    font-size: 25px;
+    
+}
+/* セクション5 */
+
+  .section5 table {
+    display: block;
+   text-align: center;
+    width: 100%;
+  }
+
+  .section5 tr {
+    margin-bottom: 15px;
+    border: 2px solid #b5c7c7;
+    padding: 10px;
+     background-color: #99e3e5;
+  }
+
+  .section5 td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  .section5  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+.section5 .text2 {
+height: 100%;
+width: 100%;
+}
+
+.section5 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    
+}
+.section5 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+.section5 h1 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section5 h2 {
+  font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section5 .img1 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+    
+  
+}
+.section5 .heading-31 {
+    border-bottom: 2px solid #99e3e5;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+
+.section5 .risuto {
+    margin: 0 auto;
+}
+
+.section5 .midasi {
+    background-color: #99e3e5;
+    border: 1px solid #99e3e5;
+    text-align: center;
+    font-size: 1.2rem;
+    table-layout: fixed;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding: 0px 0px;
+    vertical-align:middle
+    
+
+}
+.section5 .midasitop {
+    background-color: #99e3e5;
+    border: 1px solid #99e3e5;
+    text-align: center;
+    font-size: 1.2rem;
+    table-layout: fixed;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding: 0px 0px;
+    border-radius: 0px;
+    vertical-align:middle
+}
+
+.section5 .midasibottom {
+    background-color: #99e3e5;
+    border: 1px solid #99e3e5;
+    text-align: center;
+    font-size: 1.2rem;
+    table-layout: fixed;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding: 0px 0px;
+    border-radius: 0px;
+    
+    vertical-align:middle
+
+}
+
+.section5 p {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 1.1rem;
+    padding: 0px 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    width: 920px;
+    vertical-align:middle
+}
+.section5 .texttop {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 1.1rem;
+    padding: 24px 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    width: 920px;
+    border-radius: 0px;
+    vertical-align:middle
+}
+.section5 .textbottom {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 1.1rem;
+    padding: 24px 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    width: 920px;
+    border-radius: 0px;
+    vertical-align:middle
+}
+/* セクション6 */
+.section6 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section6 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section6 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section6 h1 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section6 h2 {
+  font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section6 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+/* セクション7 */
+.sutahhu {
+   border-radius: 0px 1000px 0px 1000px;
+   height: auto;
+   display: flex; 
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   background:
+  linear-gradient(
+    150deg,
+    #40cfcf,
+    #b5fdcd
+  );
+}
+.sutahhu img {
+    width: 20rem;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 98px 30px 98px 30px;
+    background-color: #a5b5b8;
+    
+}
+
+/* セクション8 */
+.section8 {
+    margin-bottom: 30px;
+}
+.section8 .text2 {
+height: 100%;
+width: 100%;
+}
+
+.section8 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+     margin: 0 auto;
+}
+
+.section8 .taitorulogo .text {
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+.section8 h1 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section8 h2 {
+  font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 4px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section8 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 30px;
+}
+.section8 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 170px;
+}
+
+.section8 .midasi {
+
+    border-bottom: 3px solid #57cbd0;
+    color: #333333;
+    font-size: 1rem;
+    table-layout: fixed;
+    padding: 10px;
+    vertical-align:middle
+    
+    
+}
+
+.section8 p {
+    table-layout: fixed;
+    padding-top: 15px;
+    vertical-align:middle;
+    
+}
+.section8 thead {
+    display: none;
+  }
+
+ .section8 table, tbody, tr, td {
+    display: block;
+    width: 99%;
+    margin: 0 auto;
+  }
+
+ .section8 tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-bottom: 0px;
+    overflow: hidden;
+  }
+
+ .section8 td {
+    position: relative;
+    padding-left: 12%;
+    border: none;
+  }
+
+ .section8 td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+
+ .section8 th{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+/* セクション9 */
+.section9 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section9 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section9 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+.section9 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section9 h1 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section9 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+/* セクション9-2 */
+.section9-2 {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.section9-2 h1 {
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+}
+.section9-2 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section9-2 .text2 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 300px;
+}
+
+.section9-2 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    margin-left:70px;
+}
+
+.section9-2 .row1 img {
+ width: 60px;
+ height: 60px;
+ padding: 5px;
+ 
+}
+
+.section9-2 .row1 .imgs {
+    margin-right: 60px;
+    
+}
+
+/* セクション9-3 */
+.section9-3 .row2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d8fbfd;
+}
+.section9-3 .row2 p {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-left: 0px;
+    letter-spacing: 0.8px;    
+    line-height: 2; 
+    margin-bottom: 10px;
+    margin: 0 auto;
+   
+}
+.section9-3 img {
+   background-size:cover ;
+   background-position: center;
+   width: 18rem;
+   border-radius:0px;
+   padding: 0px;
+   margin: 0px 0px 0px 55px;
+    border: 2px solid #a5b5b8 ;
+}
+.list-9 {
+    list-style-type: disc;
+    list-style-position: inside;
+    border: 2px solid #57cbd0;
+}
+
+.list-9 li {
+    padding: .5em;
+    margin: 10px;
+    text-align: center;
+    height: auto;
+
+}
+
+.list-9 li:not(:last-child) {
+    border-bottom: 1px dashed #57cbd0;
+}
+
+.list-9 li::marker {
+    color: #797878;
+    font-size: 1.1em;
+} 
+
+/* セクション10 */
+.section10 {
+    max-width: 1920px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+.section10 .text2 {
+    max-width: 80px;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 22px;
+    margin-right: 0px;
+}
+.section10 .p1 {
+    font-size: 0.7rem;
+    text-align: center;
+    letter-spacing: 1px;    
+    line-height: 2; 
+    padding: 0px;
+    max-width: 130px;
+    width: 80px;
+}
+.section10 .shoot {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    padding-left: 2px;
+    padding-top: 0px; 
+
+}
+
+.section10 .text3 {
+    max-width: 130px;
+    margin-right: 30px;
+    
+
+}
+
+.section10 .text3 h1 {
+    font-size: 13px;
+    padding-bottom: 5px;
+    letter-spacing: 0px;
+    
+}
+.section10 .long {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 4px;
+    padding-left: 0px;
+    padding-top: 0px; 
+}
+.section10 .p2 {
+    font-size: 0.7rem;
+    text-align: center;
+    letter-spacing: 1px;    
+    line-height: 1.5; 
+    margin-left: 0px;
+
+}
+
+.section10 .text2 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    max-width: 130px;
+    width: 80px;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+
+  
+}
+
+.section10 .text3 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    max-width: 130px;
+    width: 100px;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+
+  
+}
+.section10 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-top: 0px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #c3f1f1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px 30px 30px 30px;
+
+}
+
+.section10 .row1 img {
+   max-width: 45rem;
+   width: 100%;
+   background-size:cover ;
+   background-position: center;
+   border-radius: 10px;
+   margin: 17px;
+   margin-left: 10px;
+   border: 2px solid #a5b5b8 ;
+
+}
+
+.section10 .ate {
+   background-size:cover ;
+   background-position: center;
+   height: 100px;
+   width: 130px;
+   border-radius: 16px;
+   margin-left: 0px;  
+   
+}
+.section10 h1 {
+    font-size: 30px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+/* セクション11 */
+
+ .section11 {
+    width: 100%;
+    max-width: 1920px;
+
+}
+.section11 .box1 {
+    border: 2px solid #797878;
+    color: #333333;
+    margin-bottom: 0px;
+    margin-left: 0%;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin: 5px;
+    background-color: #fcffff;
+}
+/* kugi */
+
+.section11 .text1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+
+
+.section11 .text1 h2 {
+    font-size: 0.7rem;
+    font-weight: 700px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #797878;
+    width:auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left:0px;
+    margin-right: 0px;
+    text-align: center;
+    
+}
+
+.section11 p {
+    font-size: 0.4rem;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 5px;
+    letter-spacing: 0px;
+    line-height: 2; 
+
+
+}
+
+.section11 .box {
+   height: auto;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   padding: 2px;
+   width: 100%;
+   margin-top: 0px;
+   border-radius: 30px 30px 0px 30px;
+   max-width: 1880px;
+   margin: 0 auto;   
+   background-color: #bbeff0;
+}
+
+
+.section11 img {
+    width: 7.2rem;
+    margin: 0 auto;
+    border: 2px solid #a5b5b8 ;
+    border-radius: 30px;
+
+}
+
+.section11 .text2 a {
+    font-size: 0.40rem;
+    font-weight: 550;
+    display: inline-block;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgb(115, 134, 134);
+    background:
+  linear-gradient(
+    150deg,
+    #cdebeb,
+    #5edce6
+  );
+}
+
+
+.section11 .text3 a {
+    font-size: 0.40rem;
+    font-weight: 550;
+    display: inline-block;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    margin-bottom: 1px;
+    padding: 5px 10px ;
+    box-shadow: 0px 0px 5px rgb(115, 134, 134);
+    background:
+  linear-gradient(
+    150deg,
+    #cdebeb,
+    #5edce6
+  );
+}
+
+.section11 .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+
+.section11 a:hover {
+    background-color: rgb(129, 134, 134);
+}
+
+/* セクション12 */
+.section12 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section12 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section12 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+.section12 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section12 h1 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section12 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+
+
+
+/* セクション13 */
+.section13 {
+    max-width: 360px;
+    width: 100%;
+    
+
+}
+
+.section13 .text2 p {
+    font-size: 0.6rem;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;;
+    font-weight: 400;
+    padding: 8px;
+    background-color: #ffffff;
+
+}
+.section13 img {
+   width: 10.3rem;
+   margin-bottom: 10px;
+   margin-top: 0px;
+   
+}
+.section13 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section13 .text2 {
+    border: 2px solid #797878;
+    color: #333333;
+    margin-bottom: 30px;
+    max-width: 600px;
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+
+/* セクション14 */
+.section14 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section14 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section14 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section14 h1 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section14 h2 {
+  font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section14 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+
+/* セクション15 */
+.section15 {
+   width: 100%;
+    max-width: 1920px; 
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.section15 .container {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #ddf0f1;
+    margin: 0 auto;
+
+}
+
+
+}
+
+@media screen and (max-width: 360px) {
+    /* フッター */
+footer {
+    background-color: #c7c9c7;
+    margin-top: 15px;
+}
+
+footer .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer img {
+height: 40px;
+width: 40px;
+
+}
+
+footer p {
+    font-size: 0.7rem;
+    margin-left: 10px;
+}
+    /* ヘッダー */
+header {
+    font-weight: 700;
+    width: 100%;
+}
+
+header .container {
+    max-width: 412px;
+    width: 100%;    
+    margin: 0 auto;
+   
+}
+
+header .container img {
+    max-width: 25rem;
+    width: 100%;
+    transition-duration: 0.2s;
+}
+
+header .row {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 30px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header ul li {
+    font-size: 0.5rem;
+    margin: 2px;
+    letter-spacing: 1px;
+}
+
+header ul li a:hover {
+    background-color: rgb(212, 219, 219);
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+/* セクション1 */
+.section1 .container img {
+   max-width: 25.8rem;
+   width: 100%;
+   padding: 2px;
+   background:
+  linear-gradient(
+    100deg,
+    #40cfcf,
+    #d7e0d9
+  );
+
+}
+
+.section1 .container {
+  max-width: 414px;
+  margin: 0 auto;
+}
+
+    /* セクション2 */
+    .section2 {
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+}
+
+
+.section2 .taitorulogo {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-width: 1920px;
+    width: 100%;
+
+}
+
+.section2 .img0 {
+    width: 100%;
+    max-width: 6.5rem;
+}
+
+.section2 .text  {
+    margin-right: 10px;
+}       
+
+
+
+.section2 h1 {
+    padding-bottom: 5px;
+    margin-top: 32px;
+    max-width: 100%;
+    font-size: 1.3rem;
+}
+
+.section2 h2 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+
+.section2 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+}
+
+/* セクション2-2 */
+.section2-2 {
+    max-width: 414px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d8fbfd;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding: 0px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.section2-2 .row p {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 2.5; 
+}
+.section2-2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1660px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+
+
+.section2-2 .row img {
+    max-width: 23.5rem;
+    width: 100%;
+    background-size:cover ;
+    background-position: center;
+    border-radius: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px 0px 0px 0px;
+    border: 2px solid #a5b5b8 ;
+    margin: 0 auto;
+
+}
+/* セクション2-3 */
+.section2-3 {
+    max-width: 414px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.section2-3 .row   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    background-color:#ffffff;
+}
+
+.section2-3 .row img {
+    width: 100%;
+    max-width: 7rem;
+    border-radius: 10px;
+    padding: 0px;
+    align-items: center;
+    border: 2px solid #a5b5b8 ;
+}
+/* セクション3 */
+
+.section3 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+}
+.section3 {
+    width: 100%;
+    max-width: 1075px;
+    margin: 0 auto;
+}
+.section3 .taitorulogo {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section3 .img1 {
+    width: 100%;
+    max-width: 7.5rem;
+}
+
+.section3 h1 {
+    padding-bottom: 5px;
+    margin-top: 32px;
+    max-width: 100%;
+    font-size: 1.3rem;
+
+}
+
+.section3 h2 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+/* セクション3-2 */
+.section3-2 {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.section3-2 .row p {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 2.5; 
+    margin: 0 auto;
+}
+
+.section3-2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1660px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.section3-2 .row img {
+    max-width: 23.5rem;
+    width: 100%;
+    background-size:cover ;
+    background-position: center;
+    border-radius: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 0px 0px 0px;
+    border: 2px solid #a5b5b8 ;
+    margin: 0 auto;
+
+}
+
+/* セクション4  */
+
+.section4 .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+}
+
+.section4 h1 {
+ margin: 0 auto;
+ margin-bottom: 20px;
+ font-size: 1.3rem;
+ letter-spacing: 5px;
+ border-bottom: 2px solid #57cbd0;
+ color: #333333;
+ width: 104px;
+ text-align: center;
+}
+
+.section4 .list-9 {
+max-width: 25rem;
+width: 100%;
+height: auto;
+margin: 0 auto;
+}
+
+.section4  .taitoru {
+    font-size: 25px;
+    
+}
+/* セクション5 */
+
+  .section5 table {
+    display: block;
+   text-align: center;
+    width: 100%;
+  }
+
+  .section5 tr {
+    margin-bottom: 15px;
+    border: 2px solid #b5c7c7;
+    padding: 10px;
+    background-color: #99e3e5;
+  }
+
+  .section5 td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  .section5  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+.section5 .text2 {
+height: 100%;
+width: 100%;
+}
+
+.section5 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    
+}
+.section5 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+.section5 h1 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section5 h2 {
+  font-size: 0.7rem;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section5 .img1 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+    
+  
+}
+.section5 .heading-31 {
+    border-bottom: 2px solid #99e3e5;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+
+.section5 .risuto {
+    margin: 0 auto;
+}
+
+.section5 .midasi {
+    background-color: #99e3e5;
+    border: 1px solid #99e3e5;
+    text-align: center;
+    font-size: 1.2rem;
+    table-layout: fixed;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding: 0px 0px;
+    vertical-align:middle
+    
+
+}
+.section5 .midasitop {
+    background-color: #99e3e5;
+    border: 1px solid #99e3e5;
+    text-align: center;
+    font-size: 1.2rem;
+    table-layout: fixed;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding: 0px 0px;
+    border-radius: 0px;
+    vertical-align:middle
+}
+
+.section5 .midasibottom {
+    background-color: #99e3e5;
+    border: 1px solid #99e3e5;
+    text-align: center;
+    font-size: 1.2rem;
+    table-layout: fixed;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding: 0px 0px;
+    border-radius: 0px;
+    
+    vertical-align:middle
+
+}
+
+.section5 p {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 0.8rem;
+    padding: 0px 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    width: 920px;
+    vertical-align:middle
+}
+.section5 .texttop {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 0.8rem;
+    padding: 24px 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    width: 920px;
+    border-radius: 0px;
+    vertical-align:middle
+}
+.section5 .textbottom {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 0.8rem;
+    padding: 24px 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    width: 920px;
+    border-radius: 0px;
+    vertical-align:middle
+}
+/* セクション6 */
+.section6 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section6 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section6 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section6 h1 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section6 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section6 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+/* セクション7 */
+.sutahhu {
+   border-radius: 0px 1000px 0px 1000px;
+   height: auto;
+   display: flex; 
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   background:
+  linear-gradient(
+    150deg,
+    #40cfcf,
+    #b5fdcd
+  );
+}
+.sutahhu img {
+    width: 20rem;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 98px 30px 98px 30px;
+    background-color: #a5b5b8;
+    
+}
+
+/* セクション8 */
+.section8 {
+    margin-bottom: 30px;
+}
+.section8 .text2 {
+height: 100%;
+width: 100%;
+}
+
+.section8 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+     margin: 0 auto;
+}
+
+.section8 .taitorulogo .text {
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+.section8 h1 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section8 h2 {
+  font-size: 0.7rem;
+    font-weight: 700px;
+    letter-spacing: 4px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section8 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 30px;
+}
+.section8 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 170px;
+}
+
+.section8 .midasi {
+
+    border-bottom: 3px solid #57cbd0;
+    color: #333333;
+    font-size: 0.8rem;
+    table-layout: fixed;
+    padding: 10px;
+    vertical-align:middle
+    
+    
+}
+
+.section8 p {
+    table-layout: fixed;
+    padding-top: 15px;
+    vertical-align:middle;
+    
+}
+.section8 thead {
+    display: none;
+  }
+
+ .section8 table, tbody, tr, td {
+    display: block;
+    width: 99%;
+    margin: 0 auto;
+  }
+
+ .section8 tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-bottom: 0px;
+    overflow: hidden;
+  }
+
+ .section8 td {
+    position: relative;
+    padding-left: 12%;
+    border: none;
+  }
+
+ .section8 td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+
+ .section8 th{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+/* セクション9 */
+.section9 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section9 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section9 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+.section9 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section9 h1 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section9 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+/* セクション9-2 */
+.section9-2 {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.section9-2 h1 {
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+}
+.section9-2 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section9-2 .text2 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 300px;
+}
+
+.section9-2 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    margin-left:70px;
+}
+
+.section9-2 .row1 img {
+ width: 40px;
+ height: 40px;
+ padding: 5px;
+ 
+}
+
+.section9-2 .row1 .imgs {
+    margin-right: 60px;
+    
+}
+
+/* セクション9-3 */
+.section9-3 .row2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 416px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d8fbfd;
+}
+.section9-3 .row2 p {
+    font-size: 0.6rem;
+    text-align: center;
+    margin-left: 0px;
+    letter-spacing: 0.8px;    
+    line-height: 2; 
+    margin-bottom: 10px;
+    margin: 0 auto;
+   
+}
+.section9-3 img {
+   background-size:cover ;
+   background-position: center;
+   width: 18rem;
+   border-radius:0px;
+   padding: 0px;
+   margin: 0px 0px 0px 40px;
+   border: 2px solid #a5b5b8 ;
+}
+.list-9 {
+    list-style-type: disc;
+    list-style-position: inside;
+    border: 2px solid #57cbd0;
+}
+
+.list-9 li {
+    padding: .5em;
+    margin: 10px;
+    text-align: center;
+    height: auto;
+
+}
+
+.list-9 li:not(:last-child) {
+    border-bottom: 1px dashed #57cbd0;
+}
+
+.list-9 li::marker {
+    color: #797878;
+    font-size: 1.1em;
+} 
+
+/* セクション10 */
+.section10 {
+    max-width: 1920px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+.section10 .text2 {
+    max-width: 80px;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 22px;
+    margin-right: 0px;
+}
+.section10 .p1 {
+    font-size: 0.7rem;
+    text-align: center;
+    letter-spacing: 1px;    
+    line-height: 2; 
+    padding: 0px;
+    max-width: 130px;
+    width: 80px;
+}
+.section10 .shoot {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    padding-left: 2px;
+    padding-top: 0px; 
+
+}
+
+.section10 .text3 {
+    max-width: 130px;
+    margin-right: 30px;
+    
+
+}
+
+.section10 .text3 h1 {
+    font-size: 13px;
+    padding-bottom: 5px;
+    letter-spacing: 0px;
+    
+}
+.section10 .long {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 4px;
+    padding-left: 0px;
+    padding-top: 0px; 
+}
+.section10 .p2 {
+    font-size: 0.7rem;
+    text-align: center;
+    letter-spacing: 1px;    
+    line-height: 1.5; 
+    margin-left: 0px;
+
+}
+
+.section10 .text2 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    max-width: 130px;
+    width: 80px;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+
+  
+}
+
+.section10 .text3 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    max-width: 130px;
+    width: 100px;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+
+  
+}
+.section10 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-top: 0px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #c3f1f1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px 30px 30px 30px;
+
+}
+
+.section10 .row1 img {
+   max-width: 45rem;
+   width: 100%;
+   background-size:cover ;
+   background-position: center;
+   border-radius: 10px;
+   margin: 17px;
+   margin-left: 10px;
+   border: 2px solid #a5b5b8 ;
+
+}
+
+.section10 .ate {
+   background-size:cover ;
+   background-position: center;
+   height: 100px;
+   width: 130px;
+   border-radius: 16px;
+   margin-left: 0px;  
+   
+}
+.section10 h1 {
+    font-size: 30px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+/* セクション11 */
+
+ .section11 {
+    width: 100%;
+    max-width: 1920px;
+
+}
+.section11 .box1 {
+    border: 2px solid #797878;
+    color: #333333;
+    margin-bottom: 0px;
+    margin-left: 0%;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin: 5px;
+    background-color: #fcffff;
+}
+/* kugi */
+
+.section11 .text1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+
+
+.section11 .text1 h2 {
+    font-size: 0.7rem;
+    font-weight: 700px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #797878;
+    width:auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left:0px;
+    margin-right: 0px;
+    text-align: center;
+    
+}
+
+.section11 p {
+    font-size: 0.30rem;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 5px;
+    letter-spacing: 0px;
+    line-height: 2; 
+
+
+}
+
+.section11 .box {
+   height: auto;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   padding: 2px;
+   width: 100%;
+   margin-top: 0px;
+   border-radius: 30px 30px 0px 30px;
+   max-width: 1880px;
+   margin: 0 auto;   
+   background-color: #bbeff0;
+}
+
+
+.section11 img {
+    width: 7.2rem;
+    margin: 0 auto;
+    border: 2px solid #a5b5b8 ;
+    border-radius: 30px;
+
+}
+
+.section11 .text2 a {
+    font-size: 0.40rem;
+    font-weight: 550;
+    display: inline-block;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    padding: 5px 5px;
+    box-shadow: 0px 0px 5px rgb(115, 134, 134);
+    background:
+  linear-gradient(
+    150deg,
+    #cdebeb,
+    #5edce6
+  );
+}
+
+
+.section11 .text3 a {
+    font-size: 0.40rem;
+    font-weight: 550;
+    display: inline-block;
+    border-radius: 6px;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+    padding: 5px 5px ;
+    box-shadow: 0px 0px 5px rgb(115, 134, 134);
+    background:
+  linear-gradient(
+    150deg,
+    #cdebeb,
+    #5edce6
+  );
+}
+
+.section11 .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+
+.section11 a:hover {
+    background-color: rgb(129, 134, 134);
+}
+
+/* セクション12 */
+.section12 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section12 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section12 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+.section12 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section12 h1 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section12 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+
+
+
+/* セクション13 */
+.section13 {
+    max-width: 360px;
+    width: 100%;
+    
+
+}
+
+.section13 .text2 p {
+    font-size: 0.6rem;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;;
+    font-weight: 400;
+    padding: 8px;
+    background-color: #ffffff;
+
+}
+.section13 img {
+   width: 10.3rem;
+   margin-bottom: 10px;
+   margin-top: 0px;
+   
+}
+.section13 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section13 .text2 {
+    border: 2px solid #797878;
+    color: #333333;
+    margin-bottom: 30px;
+    max-width: 600px;
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+
+/* セクション14 */
+.section14 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section14 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section14 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section14 h1 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section14 h2 {
+  font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section14 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+
+/* セクション15 */
+.section15 {
+   width: 100%;
+    max-width: 1920px; 
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.section15 .container {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #ddf0f1;
+    margin: 0 auto;
+
+}
+
+
+}
+
+@media screen and (max-width: 402px) {
+    /* フッター */
+footer {
+    background-color: #c7c9c7;
+    margin-top: 15px;
+}
+
+footer .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer img {
+height: 40px;
+width: 40px;
+
+}
+
+footer p {
+    font-size: 0.7rem;
+    margin-left: 10px;
+}
+    /* ヘッダー */
+header {
+    font-weight: 700;
+    width: 100%;
+}
+
+header .container {
+    max-width: 412px;
+    width: 100%;    
+    margin: 0 auto;
+   
+}
+
+header .container img {
+    max-width: 25rem;
+    width: 100%;
+    transition-duration: 0.2s;
+}
+
+header .row {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 30px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header ul li {
+    font-size: 0.5rem;
+    margin: 2px;
+    letter-spacing: 1px;
+}
+
+header ul li a:hover {
+    background-color: rgb(212, 219, 219);
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+/* セクション1 */
+.section1 .container img {
+   max-width: 25.8rem;
+   width: 100%;
+   padding: 2px;
+   background:
+  linear-gradient(
+    100deg,
+    #40cfcf,
+    #d7e0d9
+  );
+
+}
+
+.section1 .container {
+  max-width: 414px;
+  margin: 0 auto;
+}
+
+    /* セクション2 */
+    .section2 {
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+}
+
+
+.section2 .taitorulogo {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-width: 1920px;
+    width: 100%;
+
+}
+
+.section2 .img0 {
+    width: 100%;
+    max-width: 6.5rem;
+}
+
+.section2 .text  {
+    margin-right: 10px;
+}       
+
+
+
+.section2 h1 {
+    padding-bottom: 5px;
+    margin-top: 32px;
+    max-width: 100%;
+    font-size: 1.3rem;
+}
+
+.section2 h2 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+
+.section2 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+}
+
+/* セクション2-2 */
+.section2-2 {
+    max-width: 414px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d8fbfd;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding: 0px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.section2-2 .row p {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 2.5; 
+}
+.section2-2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1660px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+
+
+.section2-2 .row img {
+    max-width: 23.5rem;
+    width: 100%;
+    background-size:cover ;
+    background-position: center;
+    border-radius: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px 0px 0px 0px;
+    border: 2px solid #a5b5b8 ;
+    margin: 0 auto;
+
+}
+/* セクション2-3 */
+.section2-3 {
+    max-width: 414px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.section2-3 .row   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    background-color:#ffffff;
+}
+
+.section2-3 .row img {
+    width: 100%;
+    max-width: 7rem;
+    border-radius: 10px;
+    padding: 0px;
+    align-items: center;
+    border: 2px solid #a5b5b8 ;
+}
+/* セクション3 */
+
+.section3 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+}
+.section3 {
+    width: 100%;
+    max-width: 1075px;
+    margin: 0 auto;
+}
+.section3 .taitorulogo {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section3 .img1 {
+    width: 100%;
+    max-width: 7.5rem;
+}
+
+.section3 h1 {
+    padding-bottom: 5px;
+    margin-top: 32px;
+    max-width: 100%;
+    font-size: 1.3rem;
+
+}
+
+.section3 h2 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+/* セクション3-2 */
+.section3-2 {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.section3-2 .row p {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 2.5; 
+    margin: 0 auto;
+}
+
+.section3-2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1660px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.section3-2 .row img {
+    max-width: 23.5rem;
+    width: 100%;
+    background-size:cover ;
+    background-position: center;
+    border-radius: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 0px 0px 0px;
+    border: 2px solid #a5b5b8 ;
+    margin: 0 auto;
+
+}
+
+/* セクション4  */
+
+.section4 .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+}
+
+.section4 h1 {
+ margin: 0 auto;
+ margin-bottom: 20px;
+ font-size: 1.3rem;
+ letter-spacing: 5px;
+ border-bottom: 2px solid #57cbd0;
+ color: #333333;
+ width: 104px;
+ text-align: center;
+}
+
+.section4 .list-9 {
+max-width: 25rem;
+width: 100%;
+height: auto;
+margin: 0 auto;
+}
+
+.section4  .taitoru {
+    font-size: 25px;
+    
+}
+/* セクション5 */
+
+  .section5 table {
+    display: block;
+   text-align: center;
+    width: 100%;
+  }
+
+  .section5 tr {
+    margin-bottom: 15px;
+    border: 2px solid #b5c7c7;
+    padding: 10px;
+    background-color: #99e3e5;
+  }
+
+  .section5 td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  .section5  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+.section5 .text2 {
+height: 100%;
+width: 100%;
+}
+
+.section5 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    
+}
+.section5 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+.section5 h1 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section5 h2 {
+  font-size: 0.7rem;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section5 .img1 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+    
+  
+}
+.section5 .heading-31 {
+    border-bottom: 2px solid #99e3e5;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+
+.section5 .risuto {
+    margin: 0 auto;
+}
+
+.section5 .midasi {
+    background-color: #99e3e5;
+    border: 1px solid #99e3e5;
+    text-align: center;
+    font-size: 1.2rem;
+    table-layout: fixed;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding: 0px 0px;
+    vertical-align:middle
+    
+
+}
+.section5 .midasitop {
+    background-color: #99e3e5;
+    border: 1px solid #99e3e5;
+    text-align: center;
+    font-size: 1.2rem;
+    table-layout: fixed;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding: 0px 0px;
+    border-radius: 0px;
+    vertical-align:middle
+}
+
+.section5 .midasibottom {
+    background-color: #99e3e5;
+    border: 1px solid #99e3e5;
+    text-align: center;
+    font-size: 1.2rem;
+    table-layout: fixed;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding: 0px 0px;
+    border-radius: 0px;
+    
+    vertical-align:middle
+
+}
+
+.section5 p {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 0.8rem;
+    padding: 0px 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    width: 920px;
+    vertical-align:middle
+}
+.section5 .texttop {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 0.8rem;
+    padding: 24px 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    width: 920px;
+    border-radius: 0px;
+    vertical-align:middle
+}
+.section5 .textbottom {
+    background-color: #e9ebe8;
+    border: 1px solid rgb(255, 255, 255);
+    table-layout: fixed;
+    font-size: 0.8rem;
+    padding: 24px 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    width: 920px;
+    border-radius: 0px;
+    vertical-align:middle
+}
+/* セクション6 */
+.section6 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section6 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section6 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section6 h1 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section6 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section6 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+/* セクション7 */
+.sutahhu {
+   border-radius: 0px 1000px 0px 1000px;
+   height: auto;
+   display: flex; 
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   background:
+  linear-gradient(
+    150deg,
+    #40cfcf,
+    #b5fdcd
+  );
+}
+.sutahhu img {
+    width: 20rem;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 98px 30px 98px 30px;
+    background-color: #a5b5b8;
+    
+}
+
+/* セクション8 */
+.section8 {
+    margin-bottom: 30px;
+}
+.section8 .text2 {
+height: 100%;
+width: 100%;
+}
+
+.section8 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+     margin: 0 auto;
+}
+
+.section8 .taitorulogo .text {
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+.section8 h1 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section8 h2 {
+  font-size: 0.7rem;
+    font-weight: 700px;
+    letter-spacing: 4px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section8 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 30px;
+}
+.section8 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 170px;
+}
+
+.section8 .midasi {
+
+    border-bottom: 3px solid #57cbd0;
+    color: #333333;
+    font-size: 0.8rem;
+    table-layout: fixed;
+    padding: 10px;
+    vertical-align:middle
+    
+    
+}
+
+.section8 p {
+    table-layout: fixed;
+    padding-top: 15px;
+    vertical-align:middle;
+    
+}
+.section8 thead {
+    display: none;
+  }
+
+ .section8 table, tbody, tr, td {
+    display: block;
+    width: 99%;
+    margin: 0 auto;
+  }
+
+ .section8 tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-bottom: 0px;
+    overflow: hidden;
+  }
+
+ .section8 td {
+    position: relative;
+    padding-left: 12%;
+    border: none;
+  }
+
+ .section8 td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+
+ .section8 th{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+/* セクション9 */
+.section9 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section9 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section9 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+.section9 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section9 h1 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section9 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+/* セクション9-2 */
+.section9-2 {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.section9-2 h1 {
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+}
+.section9-2 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section9-2 .text2 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 300px;
+}
+
+.section9-2 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    margin-left:70px;
+}
+
+.section9-2 .row1 img {
+ width: 40px;
+ height: 40px;
+ padding: 5px;
+ 
+}
+
+.section9-2 .row1 .imgs {
+    margin-right: 60px;
+    
+}
+
+/* セクション9-3 */
+.section9-3 .row2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 416px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d8fbfd;
+}
+.section9-3 .row2 p {
+    font-size: 0.6rem;
+    text-align: center;
+    margin-left: 0px;
+    letter-spacing: 0.8px;    
+    line-height: 2; 
+    margin-bottom: 10px;
+    margin: 0 auto;
+   
+}
+.section9-3 img {
+   background-size:cover ;
+   background-position: center;
+   width: 18rem;
+   border-radius:0px;
+   padding: 0px;
+   margin: 0px 0px 0px 40px;
+   border: 2px solid #a5b5b8 ;
+}
+.list-9 {
+    list-style-type: disc;
+    list-style-position: inside;
+    border: 2px solid #57cbd0;
+}
+
+.list-9 li {
+    padding: .5em;
+    margin: 10px;
+    text-align: center;
+    height: auto;
+
+}
+
+.list-9 li:not(:last-child) {
+    border-bottom: 1px dashed #57cbd0;
+}
+
+.list-9 li::marker {
+    color: #797878;
+    font-size: 1.1em;
+} 
+
+/* セクション10 */
+.section10 {
+    max-width: 1920px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+.section10 .text2 {
+    max-width: 80px;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 22px;
+    margin-right: 0px;
+}
+.section10 .p1 {
+    font-size: 0.7rem;
+    text-align: center;
+    letter-spacing: 1px;    
+    line-height: 2; 
+    padding: 0px;
+    max-width: 130px;
+    width: 80px;
+}
+.section10 .shoot {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    padding-left: 2px;
+    padding-top: 0px; 
+
+}
+
+.section10 .text3 {
+    max-width: 130px;
+    margin-right: 30px;
+    
+
+}
+
+.section10 .text3 h1 {
+    font-size: 13px;
+    padding-bottom: 5px;
+    letter-spacing: 0px;
+    
+}
+.section10 .long {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 4px;
+    padding-left: 0px;
+    padding-top: 0px; 
+}
+.section10 .p2 {
+    font-size: 0.7rem;
+    text-align: center;
+    letter-spacing: 1px;    
+    line-height: 1.5; 
+    margin-left: 0px;
+
+}
+
+.section10 .text2 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    max-width: 130px;
+    width: 80px;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+
+  
+}
+
+.section10 .text3 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    max-width: 130px;
+    width: 100px;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+
+  
+}
+.section10 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-top: 0px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #c3f1f1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px 30px 30px 30px;
+
+}
+
+.section10 .row1 img {
+   max-width: 45rem;
+   width: 100%;
+   background-size:cover ;
+   background-position: center;
+   border-radius: 10px;
+   margin: 17px;
+   margin-left: 10px;
+   border: 2px solid #a5b5b8 ;
+
+}
+
+.section10 .ate {
+   background-size:cover ;
+   background-position: center;
+   height: 100px;
+   width: 130px;
+   border-radius: 16px;
+   margin-left: 0px;  
+   
+}
+.section10 h1 {
+    font-size: 30px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+/* セクション11 */
+
+ .section11 {
+    width: 100%;
+    max-width: 1920px;
+
+}
+.section11 .box1 {
+    border: 2px solid #797878;
+    color: #333333;
+    margin-bottom: 0px;
+    margin-left: 0%;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin: 5px;
+    background-color: #fcffff;
+}
+/* kugi */
+
+.section11 .text1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+
+
+.section11 .text1 h2 {
+    font-size: 0.7rem;
+    font-weight: 700px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #797878;
+    width:auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left:0px;
+    margin-right: 0px;
+    text-align: center;
+    
+}
+
+.section11 p {
+    font-size: 0.30rem;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 5px;
+    letter-spacing: 0px;
+    line-height: 2; 
+
+
+}
+
+.section11 .box {
+   height: auto;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   padding: 2px;
+   width: 100%;
+   margin-top: 0px;
+   border-radius: 30px 30px 0px 30px;
+   max-width: 1880px;
+   margin: 0 auto;   
+   background-color: #bbeff0;
+}
+
+
+.section11 img {
+    width: 7.2rem;
+    margin: 0 auto;
+    border: 2px solid #a5b5b8 ;
+    border-radius: 30px;
+
+}
+
+.section11 .text2 a {
+    font-size: 0.40rem;
+    font-weight: 550;
+    display: inline-block;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    padding: 5px 5px;
+    box-shadow: 0px 0px 5px rgb(115, 134, 134);
+    background:
+  linear-gradient(
+    150deg,
+    #cdebeb,
+    #5edce6
+  );
+}
+
+
+.section11 .text3 a {
+    font-size: 0.40rem;
+    font-weight: 550;
+    display: inline-block;
+    border-radius: 6px;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+    padding: 5px 5px ;
+    box-shadow: 0px 0px 5px rgb(115, 134, 134);
+    background:
+  linear-gradient(
+    150deg,
+    #cdebeb,
+    #5edce6
+  );
+}
+
+.section11 .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+
+.section11 a:hover {
+    background-color: rgb(129, 134, 134);
+}
+
+/* セクション12 */
+.section12 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section12 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section12 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+.section12 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section12 h1 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section12 h2 {
+  font-size: 0.8rem;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+
+
+
+/* セクション13 */
+.section13 {
+    max-width: 360px;
+    width: 100%;
+    
+
+}
+
+.section13 .text2 p {
+    font-size: 0.6rem;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;;
+    font-weight: 400;
+    padding: 8px;
+    background-color: #ffffff;
+
+}
+.section13 img {
+   width: 10.3rem;
+   margin-bottom: 10px;
+   margin-top: 0px;
+   
+}
+.section13 .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section13 .text2 {
+    border: 2px solid #797878;
+    color: #333333;
+    margin-bottom: 30px;
+    max-width: 600px;
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+
+/* セクション14 */
+.section14 .img0 {
+    width: 100%;
+    max-width: 9rem;
+    height: 100%;
+    max-height: 9rem;
+    margin-left: 20px;
+
+}
+.section14 .taitorulogo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.section14 .heading-31 {
+    border-bottom: 2px solid #000000;
+    color: #333333;
+    width: 100%;
+    max-width: 200px;
+}
+.section14 h1 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    
+}
+.section14 h2 {
+  font-size: 1rem;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-left: 1px;
+    padding-top: 5px; 
+}
+.section14 .taitorulogo .text {
+    margin-right: 42px;
+    margin-top: 30px;
+}
+
+/* セクション15 */
+.section15 {
+   width: 100%;
+    max-width: 1920px; 
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.section15 .container {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #ddf0f1;
+    margin: 0 auto;
+
+}
+
+
+}
